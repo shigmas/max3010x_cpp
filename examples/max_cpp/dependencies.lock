@@ -1,0 +1,19 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 5.5.0
+  shigmas/max3010x_cpp:
+    dependencies:
+    - name: idf
+      version: '>5.0.0'
+    source:
+      path: /src/max3010x_cpp
+      type: local
+    version: 0.0.1
+direct_dependencies:
+- idf
+- shigmas/max3010x_cpp
+manifest_hash: fbf3902e22225a87298ab1f0a39e2b2980e695a92f3fd8b2d97a4a1c202ca5ed
+target: esp32c3
+version: 2.0.0

@@ -1,0 +1,5 @@
+dependencies:
+  idf: ">=5.0"
+  shigmas/max3010x_cpp:
+    version: "^0.0.1"
+    override_path: "../../../"
