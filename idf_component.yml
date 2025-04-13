@@ -1,0 +1,7 @@
+version: "0.0.1"
+description: "MAX 3010x I2C driver in C++"
+url: "https://github.com/shigmas/max3010x_cpp"
+license: "MIT"
+dependencies:
+  idf:
+    version: ">5.0.0"
