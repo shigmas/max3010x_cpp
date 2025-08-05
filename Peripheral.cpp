@@ -3,6 +3,7 @@
 #include "I2CBus.h"
 
 I2CPeripheral::I2CPeripheral(I2CBus& bus, i2c_addr_bit_len_t addrLen, uint16_t address, uint32_t speed) {
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
     i2c_device_config_t dev_config = {
         .dev_addr_length = addrLen,
         .device_address = address,

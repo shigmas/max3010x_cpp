@@ -11,6 +11,7 @@ I2CBus::I2CBus(i2c_port_num_t port, gpio_num_t sda, gpio_num_t scl, i2c_clock_so
 
     // we get a warning when we don't set all of them, but there are defaults. And, if we
     // don't use them in this case, it will crash.
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
     i2c_master_bus_config_t bus_config = {
         .i2c_port = port,
         .sda_io_num = sda,
